@@ -1,0 +1,91 @@
+Criada pela JetBrains em 2011;
+Linguagem multiplataforma, orientada a objetos e funcional;
+Gratuito e de código aberto;
+
+## Estrutura da Linguagem
+
+- Não utiliza ponto e virgula;
+- Não possui operador ternário tradicional;
+- Type Safe e null safe;
+- Inferencia de tipo
+
+## Aplicabilidade
+
+- Android nativo;
+- Mobile multiplataforma(KMM);
+- Frontend web com Kotlin/JS;
+- Frameworks: Kvision e Fritz2
+- Backend com target node.js do Kotlin/JS;
+
+## Vantagens
+
+- Segura,estruturada, menos verbosa, mais otimizada, grande relevancia no mercado;
+- Interoperabilidade com o Java;
+- Smart casts e null safety;
+- Android é Kotlin first;
+
+### Sintaxe Básica
+
+Kotlin Playground
+https://play.kotlinlang.org/
+
+Tipos de dados
+
+- Int
+- Long
+- Float
+- Double
+- Array
+- Boolean
+- Char
+- Byte
+- Short
+- Null!
+
+### Declaração de variavel
+
+- Var (valor mutável, CamelCase):
+Variável que pode ter seu valor alterado durante o código;
+
+var currentAge = 22
+
+- Val (valor imutável, CamelCase):
+Variável que terá somente o valor atribuído;
+
+val currentAge = 22
+
+- Const Val (valor imutável, SNAKE_CASE):
+Constante cujo valor é atribuído durante compilação.
+
+const val MAX_AGE = 68
+
+### Possíveis erros
+
+var currentAge
+currentAge = 22 //ERRO!
+
+var currentYear = "Ano"
+currentYear = 2021 //ERRO!
+
+### Nullbility
+
+- Qualquer tipo pode ser nulo, porém isso deve ser explicitado na declaração de variavel através do uso da interrogação (?):
+- A inferencia de tipo não atribui nullability;
+
+var month:Int? = null
+//null corretamente
+
+var dar:Int = null
+//erro de compilação
+
+### Funções
+
+- Prefixo fun nomeDaFunção(nome:Tipo):TipoRetorno{}
+- Fun;'oes anonimas, single-line, inline, extensções, Lambdas, ordem superior;
+
+
+### Estruturas de controle
+
+- if/else, when, elvis operator;
+- Pode ser encadeado com múltiplas estruturas;
+
